@@ -280,8 +280,8 @@
     </main>
 
     <footer class="footer">
-        <div class="container footer-contact">
-            <div>
+        <div class="container footer-contact-container">
+            <div class="footer-contact">
                 <a class="link logo-footer" href="">Web<span class="logo-footer-2">Studio</span></a>
                 <address>
                     <ul class="list footer-address">
@@ -291,7 +291,7 @@
                     </ul>
                 </address>
             </div>
-            <div>
+            <div class="footer-social">
                 <h4 class="footer-social-text">ПРИСОЕДИНЯЙТЕСЬ</h4>
                 <ul class="footer-social-list list">
                     <li class="footer-social-item">
@@ -347,6 +347,29 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="footer-form">
+                <form class="footer-form-subscription">
+                    <p class="footer-form-text">Подпишитесь на рассылку</p>
+                    <input 
+                        type="email" 
+                        name="mail"
+                        placeholder="E-mail"
+                        autocomplite="on"
+                        >
+                    <button type="submit" class="footer-form-button">
+                        <svg 
+                            class="footer-form-button-icons" 
+                            width="24" 
+                            height="24"
+                            >
+                            <use 
+                                href="./img./icons.svg#icon-icon-send-footer"
+                            ></use>
+                        </svg>
+                        Подписаться
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
