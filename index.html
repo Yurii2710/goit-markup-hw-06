@@ -620,7 +620,9 @@
             </div>
         </div>
     </footer>
-    
+
+
+
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <div class="modal-button-div">
@@ -639,13 +641,12 @@
                     <form class="modal-form">
                         <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
 
-                        <div class="form-field">
-                            <label for="name" class="form-label">Имя</label>
+                        <label class="form-field">
+                            <span class="form-label">Имя</span>
                             <input 
                                 type="text" 
                                 class="form-input" 
                                 name="name" 
-                                id="name" 
                                 placeholder=""
                                 autofocus
                                 autocomplite="on"> 
@@ -657,15 +658,13 @@
                                         href="./img./icons.svg#icon-person-black-modal">
                                     </use>
                             </svg>
-                        </div>
-
-                        <div class="form-field">
-                            <label for="tel" class="form-label">Телефон</label>
+                        </label>
+                        <label class="form-field">
+                            <span class="form-label">Телефон</span> 
                             <input 
                                 type="tel" 
                                 class="form-input" 
                                 name="tel" 
-                                id="tel" 
                                 placeholder=""
                                 autocomplite="on"> 
                             <svg 
@@ -676,15 +675,13 @@
                                         href="./img./icons.svg#icon-phone-black-modal">
                                     </use>
                             </svg>
-                        </div>
-
-                        <div class="form-field">
-                            <label for="email" class="form-label">Почта</label>
+                        </label>
+                        <label class="form-field">
+                            <span class="form-label">Почта</span>
                             <input 
                                 type="email" 
                                 class="form-input" 
                                 name="email" 
-                                id="email" 
                                 placeholder=""
                                 autocomplite="on"> 
                             <svg 
@@ -695,28 +692,30 @@
                                         href="./img./icons.svg#icon-email-black-modal">
                                     </use>
                             </svg>
-                        </div>
+                        </label>
 
                         <div class="form-field-comment">
                             <label for="comment" class="form-label">Комментарий</label>
                             <textarea class="modal-comment" name="comment" id="comment" rows="7" placeholder="Введите текст"></textarea>
                         </div>
 
-                        <div class="form-field-agreement">
-                            <input type="checkbox" class="agreement-input" name="agreement" value="agreement" id="agreement">
-                            <label for="agreement" class="agreement-label">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-label-link">Условия договора</a></label>
-                        </div>
+                        <label class="form-field-agreement">
+                            <input type="checkbox" class="checkbox" name="agreement" value="agreement">
+                            <span class="checkbox-icon"></span>
+                            <div class="agreement-text">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-label-link"> Условия договора</a></div>
+                        </label>
 
                         <div class="modal-form-button-div">
                             <button type="submit" class="modal-form-button">Отправить</button>
                         </div>
-
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="./js/modal.js"></script>
+
 </body>
 </html>
 
