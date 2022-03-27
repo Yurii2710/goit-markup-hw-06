@@ -166,12 +166,10 @@ img {
     border-radius: 2px;
 }
 
-
 /* .header-link:hover::after,
 .header-link:focus::after {
     opacity: 1;
 } */
-
 
 .header-contact {
     display: flex;
@@ -288,12 +286,12 @@ img {
     line-height: 1.87;
     text-align: center;
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
     cursor: pointer;
     border: none;
     border-radius: 4px;
 
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -442,16 +440,10 @@ img {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-comment
-
 .modal-comment:hover,
 .modal-comment:focus {
     border: 1px solid #2196F3;
 }
-
-
-
-/* - checkbox - */
 
 .form-field-agreement {
     display: flex;
@@ -486,7 +478,6 @@ img {
     background-origin: border-box;
 }
 
-
 .agreement-text {
     font-family: 'Roboto';
     font-style: normal;
@@ -506,14 +497,6 @@ img {
     letter-spacing: 0.03em;
     color: #2196F3;
 }
-
-
-
-
-
-
-
-
 
 .modal-form-button-div {
     display: flex;
@@ -656,6 +639,7 @@ img {
     color: #ffffff;
 }
 
+
 /* ---------------- TEAM ---------------- */
 
 .team-section {
@@ -755,6 +739,7 @@ img {
 .team-social-link:focus .team-social-icons {
     fill: #FFFFFF;
 }
+
 
 /* ---------------- CLIENTS ---------------- */
 
@@ -1167,7 +1152,6 @@ input:hover {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-
 
 .project-name-portfolio {
     position: relative;
