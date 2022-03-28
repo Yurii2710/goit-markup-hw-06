@@ -176,10 +176,16 @@ img {
     margin-left: auto;
 }
 
+.header-mail-li:not(:last-child) {
+    margin-right: 30px;
+}
+
 .header-mail-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     font-family: Roboto;
     font-style: normal;
@@ -190,11 +196,6 @@ img {
     color: #757575;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-mail-link:hover,
-.header-mail-link:focus {
-    color: #2196F3;
 }
 
 .header-mail-icons {
@@ -205,11 +206,20 @@ img {
     margin-right: 10px;
 }
 
+.header-mail-link:hover,
+.header-mail-link:focus {
+    color: #2196F3;
+}
+
+
+
+
 .header-tel-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     font-family: Roboto;
     font-style: normal;
@@ -222,17 +232,17 @@ img {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-tel-link:hover,
-.header-tel-link:focus {
-    color: #2196F3;
-}
-
 .header-tel-icons {
     fill: currentColor;
     display: block;
     background-position: center;
     background-size: cover;
     margin-right: 10px;
+}
+
+.header-tel-link:hover,
+.header-tel-link:focus {
+    color: #2196F3;
 }
 
 
@@ -242,6 +252,10 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     max-height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)
@@ -249,14 +263,16 @@ img {
     background-color: #2F303A;
     background-repeat: no-repeat;
     background-position: center;
-    block-size: cover;
+    background-size: cover;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-h1 {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-
     margin-bottom: 40px;
     max-width: 696px;
 
@@ -272,11 +288,7 @@ img {
 }
 
 .hero-button {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-
-    min-width: 200px;
+    width: 200px;
     min-height: 50px;
 
     font-family: Roboto;
@@ -309,12 +321,13 @@ img {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* ---------------- MODAL WINDOW ---------------- */
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* ---------------- MODAL WINDOW ---------------- */
 
 .modal {
     position: absolute;
@@ -468,6 +481,12 @@ img {
     height: 15px;
     border: 2px solid #212121;
     border-radius: 3px;
+    cursor: pointer;
+}
+
+.checkbox:hover + .checkbox-icon, 
+.checkbox:focus + .checkbox-icon {
+    border: 2px solid #2196F3;
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -941,6 +960,11 @@ img {
     background-color: #2196F3;
 }
 
+.footer-form-subscription {
+display: flex;
+flex-wrap: wrap;
+}
+
 .footer-form-text {
     margin-bottom: 20px;
     
@@ -977,19 +1001,13 @@ input:hover {
 }
 
 .footer-form-button {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     min-width: 200px;
     min-height: 50px;
-    padding-left: 24px;
-    padding-right: 62px;
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -1003,11 +1021,20 @@ input:hover {
     background-color: #1673c0;
 }
 
-.footer-form-button-icons {
-    position: absolute;
-    top: 13px;
-    right: 28px;
+.footer-form-button-span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-right: 10px;
 }
+
+/* .footer-form-button-icons {
+    margin-left: 10px;
+} */
 
 
 
@@ -1125,7 +1152,7 @@ input:hover {
     
     /* opacity: 0; */
 
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
