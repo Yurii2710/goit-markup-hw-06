@@ -86,6 +86,7 @@ img {
 }
 
 .header-link-studio {
+    display: block;
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -100,6 +101,7 @@ img {
 }
 
 .header-link {
+    display: block;
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -139,6 +141,7 @@ img {
 
 /* -- header-portfolio -- */
 .header-link-portfolio {
+    display: block;
     position: relative;
     padding-top: 32px;
     padding-bottom: 32px;
